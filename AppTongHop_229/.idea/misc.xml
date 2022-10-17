@@ -6,10 +6,14 @@
         <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/drawable/button_bg.xml" value="0.1" />
         <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/drawable/edit_text_bg.xml" value="0.1855" />
         <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/drawable/vie_bg.xml" value="0.136" />
-        <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/layout/activity_main.xml" value="0.12512664640324214" />
+        <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/layout/fragment_profile.xml" value="0.24010416666666667" />
+        <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/layout/fragment_setting.xml" value="0.24010416666666667" />
         <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/layout/login_tab_fragment.xml" value="0.264" />
         <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/layout/signup_tab_fragment.xml" value="0.17708333333333334" />
+        <entry key="..\:/TAILIEUHOCKI/HK5/LAPTRINHANDROID/AppTongHop_229/app/src/main/res/menu/bottom_navmenu.xml" value="0.152" />
       </map>
     </option>
   </component>
