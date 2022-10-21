@@ -3,10 +3,15 @@ package com.ktgk.myapplication;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,11 +59,43 @@ public class HomeFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
+    private RecyclerView recyclerView;
+    private CategoryAdapter categoryAdapter;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view=inflater.inflate(R.layout.fragment_home, container, false);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rcv_category);
+        CategoryAdapter categoryAdapter = new CategoryAdapter(getContext());
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        categoryAdapter.setData(getListCategory());
+        recyclerView.setAdapter(categoryAdapter);
+
+        return view;
     }
-}
+    private List<Category> getListCategory(){
+        List<Category> listCategory=new ArrayList<>();
+
+        List<Book> listBook = new ArrayList<>();
+        listBook.add(new Book(R.drawable.imgbook_damthatbai,"Dám Thất bại"));
+        listBook.add(new Book(R.drawable.imgbook_ditim,"Di tìm lẽ sống"));
+        listBook.add(new Book(R.drawable.imgbook_dacnhantam,"Đắc nhân tâm"));
+        listBook.add(new Book(R.drawable.imgbook_doingan,"Đời ngắn đừng ngủ dài"));
+
+        listBook.add(new Book(R.drawable.imgbook_damthatbai,"Dám Thất bại"));
+        listBook.add(new Book(R.drawable.imgbook_ditim,"Di tìm lẽ sống"));
+        listBook.add(new Book(R.drawable.imgbook_dacnhantam,"Đắc nhân tâm"));
+        listBook.add(new Book(R.drawable.imgbook_doingan,"Đời ngắn đừng ngủ dài"));
+
+        listCategory.add(new Category("Category 1",listBook));
+        listCategory.add(new Category("Category 2",listBook));
+        listCategory.add(new Category("Category 3",listBook));
+        listCategory.add(new Category("Category 4",listBook));
+
+
+        return listCategory;
+    }
+    }
