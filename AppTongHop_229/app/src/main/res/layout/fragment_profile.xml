@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+
     tools:context=".ProfileFragment">
     <!-- TODO: Update blank fragment layout -->
 
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="232dp"
-        android:src="@drawable/imgbook_login"
+        android:background="@drawable/img_bia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -23,10 +22,11 @@
 
     <ImageView
         android:id="@+id/userimg"
-        android:layout_width="194dp"
-        android:layout_height="167dp"
-        android:src="@drawable/logo"
-        android:background="@null"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:background="@drawable/circle"
+
+        android:src="@drawable/ic_baseline_person_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.569"
@@ -35,20 +35,141 @@
         app:layout_constraintVertical_bias="0.217" />
 
     <TextView
-        android:layout_width="159dp"
-        android:layout_height="23dp"
+        android:id="@+id/abc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@null"
         android:minHeight="48dp"
-        android:text="Thu Luyến"
+        android:text="Nguyễn Thị Thu Luyến"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.147"
+        app:layout_constraintVertical_bias="0.172"
         app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="334dp"
+        android:layout_height="33dp"
+        android:minHeight="48dp"
+        android:text="Mã sinh viên:"
+        android:textAlignment="viewStart"
+        android:textColor="#FF0000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.326"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="332dp"
+        android:layout_height="55dp"
+
+        android:minHeight="48dp"
+        android:text="2050531200229"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.416"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="276dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:minHeight="48dp"
+        android:text="Ngày Sinh: "
+        android:textColor="#FF0000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.553"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="273dp"
+        android:layout_height="55dp"
+        android:background="@null"
+        android:minHeight="48dp"
+        android:text="26/02/2002"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.686"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="247dp"
+        android:layout_height="36dp"
+        android:background="@null"
+        android:minHeight="48dp"
+        android:text="Thể loại yêu thích:"
+        android:textColor="#FF0000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.807"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="339dp"
+        android:layout_height="63dp"
+        android:background="@null"
+        android:minHeight="48dp"
+        android:text="Sách phát triển bản thân"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.963"
+        app:layout_constraintWidth_percent=".8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout"
+        android:layout_width="109dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="284dp"
+        android:background="@drawable/button_bg"
+        android:drawableRight="@drawable/ic_baseline_arrow_right_alt_24"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/userimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.246" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
