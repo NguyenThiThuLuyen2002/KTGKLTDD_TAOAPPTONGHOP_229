@@ -82,18 +82,33 @@ public class HomeFragment extends Fragment {
         List<Book> listBook = new ArrayList<>();
         listBook.add(new Book(R.drawable.imgbook_damthatbai,"Dám Thất bại"));
         listBook.add(new Book(R.drawable.imgbook_ditim,"Di tìm lẽ sống"));
-        listBook.add(new Book(R.drawable.imgbook_dacnhantam,"Đắc nhân tâm"));
-        listBook.add(new Book(R.drawable.imgbook_doingan,"Đời ngắn đừng ngủ dài"));
+        listBook.add(new Book(R.drawable.img_bookdongian,"Đơn giản hóa"));
+        listBook.add(new Book(R.drawable.imgbook_thaydoi,"Thay đổi bản thân"));
 
         listBook.add(new Book(R.drawable.imgbook_damthatbai,"Dám Thất bại"));
+        listBook.add(new Book(R.drawable.imgbook_thaydoi,"Thay đổi bản thân"));
         listBook.add(new Book(R.drawable.imgbook_ditim,"Di tìm lẽ sống"));
-        listBook.add(new Book(R.drawable.imgbook_dacnhantam,"Đắc nhân tâm"));
-        listBook.add(new Book(R.drawable.imgbook_doingan,"Đời ngắn đừng ngủ dài"));
+        listBook.add(new Book(R.drawable.img_bookdongian,"Đơn giản hóa"));
 
-        listCategory.add(new Category("Category 1",listBook));
-        listCategory.add(new Category("Category 2",listBook));
-        listCategory.add(new Category("Category 3",listBook));
-        listCategory.add(new Category("Category 4",listBook));
+
+
+        listBook.add(new Book(R.drawable.imgbook_ditim,"Di tìm lẽ sống"));
+        listBook.add(new Book(R.drawable.img_bookdongian,"Đơn giản hóa"));
+        listBook.add(new Book(R.drawable.imgbook_thaydoi,"Thay đổi bản thân"));
+        listBook.add(new Book(R.drawable.imgbook_damthatbai,"Dám Thất bại"));
+
+
+        listBook.add(new Book(R.drawable.img_bookdongian,"Đơn giản hóa"));
+        listBook.add(new Book(R.drawable.imgbook_damthatbai,"Dám Thất bại"));
+        listBook.add(new Book(R.drawable.imgbook_ditim,"Di tìm lẽ sống"));
+        listBook.add(new Book(R.drawable.imgbook_thaydoi,"Thay đổi bản thân"));
+
+        listCategory.add(new Category("Sách phát triển bản thần",listBook));
+        listCategory.add(new Category("Sách Văn học nghệ thuật",listBook));
+        listCategory.add(new Category("Sách Truyện, tiểu thuyết",listBook));
+        listCategory.add(new Category("Sách Sách thiếu nhi.",listBook));
+        listCategory.add(new Category("Sách Chính trị – pháp luật",listBook));
+        listCategory.add(new Category("Sách Giáo trình",listBook));
 
 
         return listCategory;

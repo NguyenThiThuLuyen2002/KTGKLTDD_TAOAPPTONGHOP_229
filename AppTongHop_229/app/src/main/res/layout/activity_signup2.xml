@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgrlogin"
     tools:context=".Signup2Activity">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/imgUser"
@@ -51,18 +52,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
         android:hint="  Username"
         android:minHeight="48dp"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
         android:paddingBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.415"
+        app:layout_constraintVertical_bias="0.377"
         app:layout_constraintWidth_percent=".8" />
 
     <EditText
@@ -78,9 +78,10 @@
         android:paddingBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/username"
-        app:layout_constraintVertical_bias="0.059"
+        app:layout_constraintVertical_bias="0.053"
         app:layout_constraintWidth_percent=".8" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -95,8 +96,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61"
+        app:layout_constraintTop_toTopOf="@id/mobile"
+        app:layout_constraintVertical_bias="0.2"
         app:layout_constraintWidth_percent=".8"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_baseline_lock_24">
